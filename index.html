@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="content">
+        <h1 class="main-title">Calculate Happy Birthday</h1>
+        <div class="container">
+            <div class="input-wrapper">
+                <input type="date" id="date-input" />
+                <!-- Adicionada a classe .calculate-age-button ao botão -->
+                <button id="calc-age-btn" class="calculate-age-button">Calculate</button>
+            </div>
+            <div class="output-wrapper">
+                <div class="info-box">
+                    <span id="years">-</span>
+                    <p>Years</p>
+                </div>
+                <div class="info-box">
+                    <span id="months">-</span>
+                    <p>Months</p>
+                </div>
+                <div class="info-box">
+                    <span id="days">-</span>
+                    <p>Days</p>
+                </div>
+            </div>
+            <div class="output-wrapper">
+                <div class="info-box">
+                    <span id="days-until-birthday">-</span>
+                    <p>Days Until Birthday</p>
+                </div>
+                <div class="button-wrapper">
+                    <button id="google-calendar-button" class="round-button">Save B-day!</button>
+                    <div class="stars"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

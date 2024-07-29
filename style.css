@@ -1,0 +1,161 @@
+/* Estilo para o título principal */
+.main-title {
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  font-size: 2.8em;
+  margin-top: 10px; /* margem superior para subir o título */
+  margin-bottom: 60px; /* margem inferior para aproximar as boxes */
+  text-align: center;
+  animation: glow 2s infinite alternate;
+}
+
+/* Animação de brilho para o título */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #800080, 0 0 50px #800080;
+  }
+}
+
+/* Estilo para o botão "CALCULATE" */
+.calculate-age-button {
+  font-size: 1.4em;
+  background-color: rgb(216, 8, 181);
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+/* Efeito de iluminação no hover para o botão "CALCULATE" */
+.calculate-age-button:hover {
+  color: rgba(4, 100, 145, 0.623);
+  background-color: rgb(255, 0, 200);
+  box-shadow: 0 0 80px 30px rgba(179, 2, 70, 0.3);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+}
+
+body {
+  background-color: #2b2b2b; 
+  color: white; 
+}
+
+.content {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: min(60%, 28.12em);
+}
+
+.container * {
+  border: none;
+  outline: none;
+}
+
+.input-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.87em 1.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
+  margin-bottom: 3.12em;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+}
+
+input,
+button {
+  font-weight: 500;
+  border-radius: 0.31em;
+}
+
+input {
+  background-color: #eeeeff;
+  color: #080808;
+  padding: 1.2em 1.25em;
+  font-size: 1.1em; /* Aumenta o tamanho da fonte */
+  font-weight: 500;
+  border-radius: 0.31em;
+}
+
+button {
+  color: #ffffff;
+  background-color: #d808b5c0;
+}
+
+.output-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+/* Aumentando o tamanho das caixas .info-box */
+.output-wrapper .info-box {
+  height: 6.40em; /* altera a altura das caixas */
+  width: 6.40em; /* altera a largura das caixas */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.31em;
+  color: #080808;
+  display: grid;
+  place-items: center;
+  padding: 1.25em 0;
+  box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
+  font-size: 1.1em; /* Tamanho da fonte dentro das caixas */
+}
+
+span {
+  font-size: 2.0em; /* Tamanho da fonte dos resultados */
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.0em; /* Tamanho da fonte nas descrições */
+  color: #707070;
+  font-weight: 400;
+  text-align: center; 
+  line-height: 1.1; 
+  margin-top: -1px; 
+}
+
+.button-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+#google-calendar-button.round-button {
+  cursor: pointer;
+  transition: 0.5s ease;
+  width: 220px;
+  height: 70px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #d808b5c0;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+#google-calendar-button.round-button:hover {
+  color: rgba(4, 100, 145, 0.623);
+  background-color: rgb(255, 0, 200);
+  box-shadow: 0 0 80px 30px rgba(179, 2, 70, 0.3);
+}
